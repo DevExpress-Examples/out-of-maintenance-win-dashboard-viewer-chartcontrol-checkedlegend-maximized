@@ -7,12 +7,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{0B92C5D0-3B78-485A-A570-2FDF89F15BB2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <AssemblyName>CheckBoxLegend</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -30,6 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -40,136 +38,216 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
-    <Import Include="System.Collections.Generic" />
+    <Import Include="System" />
     <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
     <Import Include="System.Diagnostics" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
-    <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Charts.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.TreeMap.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.TreeMap.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraTreeMap.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraTreeMap.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Dashboard.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Dashboard.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Dashboard.v18.1.Win, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Dashboard.v18.1.Win.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Data.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.DataAccess.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.DataAccess.v18.1.UI, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.DataAccess.v18.1.UI.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Map.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Map.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Office.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.PivotGrid.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Pdf.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Pdf.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.RichEdit.v18.1.Export, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.RichEdit.v18.1.Export.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Printing.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.RichEdit.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Sparkline.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Utils.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Utils.v18.1.UI.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Xpo.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraBars.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraCharts.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v18.1.UI, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraCharts.v18.1.UI.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraCharts.v18.1.Wizard.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraEditors.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraGauges.v18.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGauges.v18.1.Presets, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraGauges.v18.1.Presets.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGauges.v18.1.Win, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraGauges.v18.1.Win.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraGrid.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraLayout.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraMap.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraMap.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPivotGrid.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraPivotGrid.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraPrinting.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraReports.v18.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.CodeParser.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraReports.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Images.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.Images.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraRichEdit.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v18.1.Extensions, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraRichEdit.v18.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\18.1.15\DevExpress.XtraTreeList.v18.1.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -213,6 +291,7 @@
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My</CustomToolNamespace>
     </None>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
